@@ -1,11 +1,14 @@
 import { render, screen } from '@testing-library/react'
 import App from './App'
 
+import { axe, toHaveNoViolations } from 'jest-axe'
+expect.extend(toHaveNoViolations)
 
 describe('App', () => {
-    it('renders the App component', () => {
-        render(<App />)
+    it('renders the App component', async () => {
+        const { container } = render(<App/>)
+        const results = await axe(container)
 
-        screen.debug(); // prints out the jsx in the App component unto the command line
+        expect(results).toHaveNoViolations()
     })
 })

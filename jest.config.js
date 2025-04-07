@@ -1,6 +1,5 @@
 export default {
     testEnvironment: 'jsdom',
-    collectCoverage: true,
     transform: {
         '^.+\\.tsx?$': 'ts-jest',
     },
