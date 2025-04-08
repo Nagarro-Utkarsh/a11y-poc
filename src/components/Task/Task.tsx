@@ -1,5 +1,5 @@
 import './Task.css'
-import {TaskProps} from "./Task.types.ts";
+import {TaskProps} from "./Task.types";
 
 
 export default function Task({
@@ -11,7 +11,7 @@ export default function Task({
         <div className={`list-item ${state}`}>
             <label
                 htmlFor={`archiveTask-${id}`}
-                aria-label={`archiveTask-${id}`}
+                // aria-label={`archiveTask-${id}`}
                 className="checkbox"
             >
                 <input
