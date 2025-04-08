@@ -1,0 +1,27 @@
+{
+  "ci": {
+    "collect": {
+      "url": [
+        "http://localhost:5173"
+      ],
+      "numberOfRuns": 3
+    },
+    "assert": {
+      "assertions": {
+        "categories:accessibility": [
+          "error",
+          {
+            "minScore": 0.9
+          }
+        ],
+        "categories:performance": "off",
+        "categories:best-practices": "off",
+        "categories:seo": "off",
+        "categories:pwa": "off"
+      }
+    },
+    "upload": {
+      "target": "temporary-public-storage"
+    }
+  }
+}
