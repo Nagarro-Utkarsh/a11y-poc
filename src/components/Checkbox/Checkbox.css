@@ -1,0 +1,31 @@
+.checkbox-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 0.875rem;
+    user-select: none;
+    color: #111827;
+    gap: 10px;
+    font-family: sans-serif;
+}
+
+
+.checkbox-text {
+    line-height: 1rem;
+}
+
+.checkbox-error {
+    color: #dc2626;
+    font-size: 0.75rem;
+    margin-top: 0.25rem;
+}
+
+.disabled .checkbox-label {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
